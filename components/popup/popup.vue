@@ -34,7 +34,7 @@
   module.exports = {
     methods: {
       close: function(){
-        this.$el.style.display = "none";
+        this.$dispatch("popupClose");
       }
     }
   }
