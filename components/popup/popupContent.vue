@@ -6,18 +6,16 @@
 
   .body
     padding 8px 0
+    text-align center
 </style>
 
 <template>
   <div class="popup_content">
-    <div class="title">{{name}}</div>
+    <div class="title">{{title}}</div>
     <div class="body">
-      <a href="{{company_url}}">{{company_url}}</a>
-      <ul>
-        <li v-repeat="job_list">
-          <a href="{{url}}">{{title}}</a>
-        </li>
-      </ul>
+      <img v-attr="src: logo">
+      <div>{{description}}</div>
+      <a href="{{url}}">{{url}}</a>
     </div>
   </div>
 </template>
@@ -26,12 +24,11 @@
   module.exports = {
     data: function () {
       return {
-        name: "", 
-        company_url: "",
-        job_list: []
+        title: "", 
+        logo: "",
+        url: "",
+        description: ""
       }
-    },
-    methods: {
     }
   }
 </script>

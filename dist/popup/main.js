@@ -7978,29 +7978,28 @@ return /******/ (function(modules) { // webpackBootstrap
 });
 
 },{}],2:[function(require,module,exports){
-require("insert-css")(".popup{position:relative;overflow:auto;max-height:400px;max-width:280px;padding:20px;background-color:#fff}.popup .closeWrap{position:absolute;top:16px;right:16px}.popup .close{display:block;width:32px;height:32px;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEUAAABUbnpMZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpUbnpUbnpMZG9MZG9MZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpMZG9MZG9MZG9MZG9Vb3tLY25UbXlMZG9TbXhNZXBUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpTbXhMZG9MZG9UbnpUbnlUbnpVb3tLY25UbnpMZG9UbnpUbnpMZG9MZG9UbnpUbnpUbnpMZG9MZG9UbnpMZG9TbXhNZXD///9uCJN+AAAARHRSTlMAAAAGNAoLLwYFceZ6BwmH5WQE5PV5hvbgCfNwCG8HCH2J+fl9+vlyBQiJ+/t8B4b2+PV583JvBgaHei/i3ywEZHDhXLNq3lYAAAABYktHREjwAtTqAAAA0klEQVQ4y93SZw6CMBiAYVpwKyqCiltxKzhwg7hA738jFWihCT2A9l/zPqHNRxnmjxZguRgItjCeSEKip9KZbA4LyOcLRSEsAFeyRQkJyJcrTjVBADkrYuH2Wr1BnpGTkPB6k7xDSFA6Fq02pSPR6dK6L3oKtX+n1R88X8PRmNIZMJnOnq+5qtE+IC+W9kpx1nq0cPtmq64pwuu7/UGPFn5nAdQiBe6fUUcJEDuijsSJ+FnAMHH3xdkiwOVq3tjgwWin+0Mgz2ANOfzkeIs27t9cb3YPIZqx7iqsAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTEyLTEwVDE1OjU3OjQxKzA4OjAwRI/yxAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0xMi0xMFQxNTo1Nzo0MSswODowMDXSSngAAABNdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuOC44LTcgUTE2IHg4Nl82NCAyMDE0LTAyLTI4IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3JnWaRffwAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTI4Q3xBgAAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxMjjQjRHdAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE0MTgxOTgyNjHyncNZAAAAEXRFWHRUaHVtYjo6U2l6ZQA5NDRCQjvWo/4AAABidEVYdFRodW1iOjpVUkkAZmlsZTovLy9ob21lL2Z0cC8xNTIwL2Vhc3lpY29uLmNuL2Vhc3lpY29uLmNuL2Nkbi1pbWcuZWFzeWljb24uY24vcG5nLzExODE3LzExODE3NTcucG5nepplUQAAAABJRU5ErkJggg==)}");
-var __vue_template__ = "<div class=\"popup\" v-show=\"displayed\">\n    <content></content>\n    <div class=\"closeWrap\">\n      <a href=\"javascript:;\" v-on=\"click: displayed = false\" class=\"close\" title=\"Close\"></a>\n    </div>\n</div>";
+require("insert-css")(".popup{position:relative;overflow:auto;max-height:400px;max-width:280px;padding:20px;border:1px solid #eee;background-color:#fff}.popup .closeWrap{position:absolute;top:20px;right:20px}.popup .close{display:block;width:32px;height:32px;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEUAAABUbnpMZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpUbnpUbnpMZG9MZG9MZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpMZG9MZG9MZG9MZG9Vb3tLY25UbXlMZG9TbXhNZXBUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpTbXhMZG9MZG9UbnpUbnlUbnpVb3tLY25UbnpMZG9UbnpUbnpMZG9MZG9UbnpUbnpUbnpMZG9MZG9UbnpMZG9TbXhNZXD///9uCJN+AAAARHRSTlMAAAAGNAoLLwYFceZ6BwmH5WQE5PV5hvbgCfNwCG8HCH2J+fl9+vlyBQiJ+/t8B4b2+PV583JvBgaHei/i3ywEZHDhXLNq3lYAAAABYktHREjwAtTqAAAA0klEQVQ4y93SZw6CMBiAYVpwKyqCiltxKzhwg7hA738jFWihCT2A9l/zPqHNRxnmjxZguRgItjCeSEKip9KZbA4LyOcLRSEsAFeyRQkJyJcrTjVBADkrYuH2Wr1BnpGTkPB6k7xDSFA6Fq02pSPR6dK6L3oKtX+n1R88X8PRmNIZMJnOnq+5qtE+IC+W9kpx1nq0cPtmq64pwuu7/UGPFn5nAdQiBe6fUUcJEDuijsSJ+FnAMHH3xdkiwOVq3tjgwWin+0Mgz2ANOfzkeIs27t9cb3YPIZqx7iqsAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTEyLTEwVDE1OjU3OjQxKzA4OjAwRI/yxAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0xMi0xMFQxNTo1Nzo0MSswODowMDXSSngAAABNdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuOC44LTcgUTE2IHg4Nl82NCAyMDE0LTAyLTI4IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3JnWaRffwAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTI4Q3xBgAAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxMjjQjRHdAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE0MTgxOTgyNjHyncNZAAAAEXRFWHRUaHVtYjo6U2l6ZQA5NDRCQjvWo/4AAABidEVYdFRodW1iOjpVUkkAZmlsZTovLy9ob21lL2Z0cC8xNTIwL2Vhc3lpY29uLmNuL2Vhc3lpY29uLmNuL2Nkbi1pbWcuZWFzeWljb24uY24vcG5nLzExODE3LzExODE3NTcucG5nepplUQAAAABJRU5ErkJggg==)}");
+var __vue_template__ = "<div class=\"popup\">\n    <content></content>\n    <div class=\"closeWrap\">\n      <a href=\"javascript:;\" v-on=\"click: close()\" class=\"close\" title=\"Close\"></a>\n    </div>\n</div>";
 module.exports = {
-    data: function () {
-      return {
-        displayed: false
+    methods: {
+      close: function(){
+        this.$el.style.display = "none";
       }
     }
   }
 module.exports.template = __vue_template__;
 
 },{"insert-css":4}],3:[function(require,module,exports){
-require("insert-css")(".popup_content .title{font-weight:700;font-size:24px}.popup_content .body{padding:8px 0}");
-var __vue_template__ = "<div class=\"popup_content\">\n    <div class=\"title\">{{name}}</div>\n    <div class=\"body\">\n      <a href=\"{{company_url}}\">{{company_url}}</a>\n      <ul>\n        <li v-repeat=\"job_list\">\n          <a href=\"{{url}}\">{{title}}</a>\n        </li>\n      </ul>\n    </div>\n  </div>";
+require("insert-css")(".popup_content .title{font-weight:700;font-size:24px}.popup_content .body{padding:8px 0;text-align:center}");
+var __vue_template__ = "<div class=\"popup_content\">\n    <div class=\"title\">{{title}}</div>\n    <div class=\"body\">\n      <img v-attr=\"src: logo\">\n      <div>{{description}}</div>\n      <a href=\"{{url}}\">{{url}}</a>\n    </div>\n  </div>";
 module.exports = {
     data: function () {
       return {
-        name: "", 
-        company_url: "",
-        job_list: []
+        title: "", 
+        logo: "",
+        url: "",
+        description: ""
       }
-    },
-    methods: {
     }
   }
 module.exports.template = __vue_template__;
@@ -8050,13 +8049,11 @@ module.exports = function (css, options) {
         },
 
         data: {
-            item: null,
-            popup: {displayed: false}
+            item: null
         },
 
         created: function() {
-            this.item = {"id":"1","name":"LINE","address":"〒150-8510　東京都渋谷区渋谷2-21-1 渋谷ヒカリエ 27階","logo_url":"https://d2v9k5u4v94ulw.cloudfront.net/small_light%28dw=80,dh=80,da=s,ds=s,cw=80,ch=80,cc=FFFFFF%29/assets/images/4910/original/9ad3acc0-fe04-45d9-bd06-682a4c7e4639.png?1392712871","company_url":"http://linecorp.com/","job_count":2,"employee_count":644,"lat":35.6587582,"lng":139.7030563,"job_list":[{"title":"事業拡大中！LINE GAME ディレクター/PM 募集！","url":"https://www.wantedly.com/projects/3181?list=1"}]};
-            this.popup.displayed = true;
+            this.item = {"id":"1","title":"Dev Morning","logo":"https://connpass-tokyo.s3.amazonaws.com/thumbs/de/dc/dedc44c50713733d06b9121186469c18.png", "url":"http://devmorning.connpass.com/","description": "エンジニアからデザイナ、学生から大人まで、週末の朝に趣味で集まってアプリやサービスをつくります。"};
         }
     });
 })(window);
