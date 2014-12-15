@@ -7983,7 +7983,7 @@ var __vue_template__ = "<div class=\"popup\">\n    <content></content>\n    <div
 module.exports = {
     methods: {
       close: function(){
-        this.$el.style.display = "none";
+        this.$dispatch("popupClose");
       }
     }
   }
@@ -8054,6 +8054,9 @@ module.exports = function (css, options) {
 
         created: function() {
             this.item = {"id":"1","title":"Dev Morning","logo":"https://connpass-tokyo.s3.amazonaws.com/thumbs/de/dc/dedc44c50713733d06b9121186469c18.png", "url":"http://devmorning.connpass.com/","description": "エンジニアからデザイナ、学生から大人まで、週末の朝に趣味で集まってアプリやサービスをつくります。"};
+            this.$on("popupClose", function(){
+                this.item = null;
+            }.bind(this));
         }
     });
 })(window);
