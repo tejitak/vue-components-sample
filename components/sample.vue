@@ -1,5 +1,8 @@
 <style lang="stylus">
-.popup_content
+.sample
+    width 280px
+    border 1px solid #eee
+
     .title
         font-weight bold
         font-size 24px
@@ -10,7 +13,7 @@
 </style>
 
 <template>
-<div class="popup_content">
+<div class="sample">
     <div class="title">{{title}}</div>
         <div class="body">
         <img v-attr="src: logo">

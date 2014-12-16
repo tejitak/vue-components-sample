@@ -6,7 +6,7 @@
     
     var Vue = require("vue");
     var vuePopup = require("../../components/popup/popup.vue");
-    var vuePopupContent = require("../../components/popup/popupContent.vue");
+    var vueSample = require("../../components/sample.vue");
 
     var app = module.exports = new Vue({
 
@@ -14,7 +14,7 @@
 
         components: {
             "vue-popup": vuePopup,
-            "vue-popup-content": vuePopupContent
+            "vue-sample": vueSample
         },
 
         data: {

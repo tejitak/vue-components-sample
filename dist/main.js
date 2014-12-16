@@ -7978,18 +7978,6 @@ return /******/ (function(modules) { // webpackBootstrap
 });
 
 },{}],2:[function(require,module,exports){
-require("insert-css")(".popup{position:relative;overflow:auto;max-height:400px;max-width:280px;padding:20px;border:1px solid #eee;background-color:#fff}.closeWrap{position:absolute;top:20px;right:20px}.close{display:block;width:32px;height:32px;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEUAAABUbnpMZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpUbnpUbnpMZG9MZG9MZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpMZG9MZG9MZG9MZG9Vb3tLY25UbXlMZG9TbXhNZXBUbnpUbnpMZG9MZG9MZG9UbnpUbnpUbnpMZG9MZG9MZG9UbnpUbnpTbXhMZG9MZG9UbnpUbnlUbnpVb3tLY25UbnpMZG9UbnpUbnpMZG9MZG9UbnpUbnpUbnpMZG9MZG9UbnpMZG9TbXhNZXD///9uCJN+AAAARHRSTlMAAAAGNAoLLwYFceZ6BwmH5WQE5PV5hvbgCfNwCG8HCH2J+fl9+vlyBQiJ+/t8B4b2+PV583JvBgaHei/i3ywEZHDhXLNq3lYAAAABYktHREjwAtTqAAAA0klEQVQ4y93SZw6CMBiAYVpwKyqCiltxKzhwg7hA738jFWihCT2A9l/zPqHNRxnmjxZguRgItjCeSEKip9KZbA4LyOcLRSEsAFeyRQkJyJcrTjVBADkrYuH2Wr1BnpGTkPB6k7xDSFA6Fq02pSPR6dK6L3oKtX+n1R88X8PRmNIZMJnOnq+5qtE+IC+W9kpx1nq0cPtmq64pwuu7/UGPFn5nAdQiBe6fUUcJEDuijsSJ+FnAMHH3xdkiwOVq3tjgwWin+0Mgz2ANOfzkeIs27t9cb3YPIZqx7iqsAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTEyLTEwVDE1OjU3OjQxKzA4OjAwRI/yxAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0xMi0xMFQxNTo1Nzo0MSswODowMDXSSngAAABNdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuOC44LTcgUTE2IHg4Nl82NCAyMDE0LTAyLTI4IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3JnWaRffwAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTI4Q3xBgAAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxMjjQjRHdAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE0MTgxOTgyNjHyncNZAAAAEXRFWHRUaHVtYjo6U2l6ZQA5NDRCQjvWo/4AAABidEVYdFRodW1iOjpVUkkAZmlsZTovLy9ob21lL2Z0cC8xNTIwL2Vhc3lpY29uLmNuL2Vhc3lpY29uLmNuL2Nkbi1pbWcuZWFzeWljb24uY24vcG5nLzExODE3LzExODE3NTcucG5nepplUQAAAABJRU5ErkJggg==)}");
-var __vue_template__ = "<div class=\"popup\">\n    <content></content>\n    <div class=\"closeWrap\">\n        <a href=\"javascript:;\" v-on=\"click: close()\" class=\"close\" title=\"Close\"></a>\n    </div>\n</div>";
-module.exports = {
-    methods: {
-      close: function(){
-        this.$dispatch("popupClose");
-      }
-    }
-  };
-module.exports.template = __vue_template__;
-
-},{"insert-css":4}],3:[function(require,module,exports){
 require("insert-css")(".sample{width:280px;border:1px solid #eee}.sample .title{font-weight:700;font-size:24px}.sample .body{padding:8px 0;text-align:center}");
 var __vue_template__ = "<div class=\"sample\">\n    <div class=\"title\">{{title}}</div>\n        <div class=\"body\">\n        <img v-attr=\"src: logo\">\n        <div>{{description}}</div>\n        <a href=\"{{url}}\">{{url}}</a>\n    </div>\n</div>";
 module.exports = {
@@ -8004,7 +7992,7 @@ module.exports = {
 };
 module.exports.template = __vue_template__;
 
-},{"insert-css":4}],4:[function(require,module,exports){
+},{"insert-css":3}],3:[function(require,module,exports){
 var inserted = {};
 
 module.exports = function (css, options) {
@@ -8028,36 +8016,42 @@ module.exports = function (css, options) {
     }
 };
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 /**
  * popup main
  */
 (function(global) {
     "use strict";
     
-    var Vue = require("./../../bower_components/vue/dist/vue.js");
-    var vuePopup = require("../../components/popup/popup.vue");
-    var vueSample = require("../../components/sample.vue");
+    var Vue = require("./../bower_components/vue/dist/vue.js");
+    var vueSample = require("../components/sample.vue");
 
     var app = module.exports = new Vue({
 
         el: '#app',
 
         components: {
-            "vue-popup": vuePopup,
             "vue-sample": vueSample
         },
 
         data: {
-            item: null
+            items: []
         },
 
         created: function() {
-            this.item = {"id":"1","title":"Dev Morning","logo":"https://connpass-tokyo.s3.amazonaws.com/thumbs/de/dc/dedc44c50713733d06b9121186469c18.png", "url":"http://devmorning.connpass.com/","description": "エンジニアからデザイナ、学生から大人まで、週末の朝に趣味で集まってアプリやサービスをつくります。"};
-            this.$on("popupClose", function(){
-                this.item = null;
-            }.bind(this));
+            this.items.push({
+                "title": "hoge",
+                "logo": "https://connpass-tokyo.s3.amazonaws.com/thumbs/de/dc/dedc44c50713733d06b9121186469c18.png",
+                "url":"http://hogehoge/",
+                "description": "hogehoge"
+            });
+            this.items.push({
+                "title": "fuga",
+                "logo": "https://connpass-tokyo.s3.amazonaws.com/thumbs/de/dc/dedc44c50713733d06b9121186469c18.png",
+                "url":"http://fugafuga/",
+                "description": "fugafuga"
+            });
         }
     });
 })(window);
-},{"../../components/popup/popup.vue":2,"../../components/sample.vue":3,"./../../bower_components/vue/dist/vue.js":1}]},{},[5])
+},{"../components/sample.vue":2,"./../bower_components/vue/dist/vue.js":1}]},{},[4])
