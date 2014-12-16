@@ -1,12 +1,12 @@
 <style lang="stylus">
 .popup
-  position relative
-  overflow auto
-  max-height 400px
-  max-width 280px
-  padding 20px
-  border: 1px solid #eee;
-  background-color #fff
+    position relative
+    overflow auto
+    max-height 400px
+    max-width 280px
+    padding 20px
+    border: 1px solid #eee;
+    background-color #fff
 
   .closeWrap
     position absolute
@@ -25,7 +25,7 @@
 <div class="popup">
     <content></content>
     <div class="closeWrap">
-      <a href="javascript:;" v-on="click: close()" class="close" title="Close"></a>
+        <a href="javascript:;" v-on="click: close()" class="close" title="Close"></a>
     </div>
 </div>
 </template>
@@ -37,5 +37,5 @@
         this.$dispatch("popupClose");
       }
     }
-  }
+  };
 </script>
