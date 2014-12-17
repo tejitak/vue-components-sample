@@ -7978,12 +7978,11 @@ return /******/ (function(modules) { // webpackBootstrap
 });
 
 },{}],2:[function(require,module,exports){
-require("insert-css")(".sample{width:280px;border:1px solid #eee}.sample .title{font-weight:700;font-size:24px}.sample .body{padding:8px 0;text-align:center}");
-var __vue_template__ = "<div class=\"sample\">\n    <div class=\"title\">{{title}}</div>\n        <div class=\"body\">\n        <img v-attr=\"src: logo\">\n        <div>{{description}}</div>\n        <a href=\"{{url}}\">{{url}}</a>\n    </div>\n</div>";
+require("insert-css")(".sample{overflow:auto;max-height:360px}.sample .body{padding:16px 0;text-align:center}");
+var __vue_template__ = "<div class=\"sample\">\n    <div class=\"body\">\n        <img v-attr=\"src: logo\">\n        <div>{{description}}</div>\n        <a v-attr=\"href: url\">{{url}}</a>\n    </div>\n</div>";
 module.exports = {
     data: function () {
         return {
-            title: "", 
             logo: "",
             url: "",
             description: ""

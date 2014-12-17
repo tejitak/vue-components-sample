@@ -1,24 +1,19 @@
 <style lang="stylus">
 .sample
-    width 280px
-    border 1px solid #eee
-
-    .title
-        font-weight bold
-        font-size 24px
+    overflow auto
+    max-height 360px
 
     .body
-        padding 8px 0
+        padding 16px 0
         text-align center
 </style>
 
 <template>
 <div class="sample">
-    <div class="title">{{title}}</div>
-        <div class="body">
+    <div class="body">
         <img v-attr="src: logo">
         <div>{{description}}</div>
-        <a href="{{url}}">{{url}}</a>
+        <a v-attr="href: url">{{url}}</a>
     </div>
 </div>
 </template>
@@ -27,7 +22,6 @@
 module.exports = {
     data: function () {
         return {
-            title: "", 
             logo: "",
             url: "",
             description: ""

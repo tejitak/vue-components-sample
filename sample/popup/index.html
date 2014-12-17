@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Popup Components Sample</title>
+<style>
+vue-popup {
+  transition: all 0.8s ease;
+  max-height: 442px;
+  overflow: hidden;
+  display: block;
+}
+
+vue-popup.expand-enter, vue-popup.expand-leave {
+  max-height: 0;
+  opacity: 0;
+}
+</style>
 </head>
 <body id="app">
     <h1>Popup Components Sample</h1>
+    <button v-on="click: popupOpened = true">Popup</button>
     <!-- components -->
-    <vue-popup v-show="item">
+    <vue-popup v-show="popupOpened" v-transition="expand" title="{{item.title}}">
         <vue-sample v-with="item"></vue-sample>
     </vue-popup>
     <!--/ components -->
