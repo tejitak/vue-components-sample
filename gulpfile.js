@@ -4,7 +4,7 @@ var jshint = require('gulp-jshint');
 var browserify = require('gulp-browserify');
 
 gulp.task('jshint', function() {
-    return gulp.src('public/js/teji/**/*.js')
+    return gulp.src('sample/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -14,6 +14,10 @@ gulp.task('watch', function() {
 });
 
 gulp.task('browserify', function() {
+    gulp.src('sample/main.js')
+        .pipe(browserify({transform: ["debowerify", "vueify"]}))
+        .pipe(gulp.dest('dist'));
+
     gulp.src('sample/popup/main.js')
         .pipe(browserify({transform: ["debowerify", "vueify"]}))
         .pipe(gulp.dest('dist/popup'));
