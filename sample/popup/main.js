@@ -5,7 +5,7 @@
     "use strict";
     
     var Vue = require("vue");
-    var vuePopup = require("../../components/popup/popup.vue");
+    var vuePopup = require("../../components/popup.vue");
     var vueSample = require("../../components/sample.vue");
 
     var app = module.exports = new Vue({

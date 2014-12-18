@@ -8043,7 +8043,7 @@ module.exports = function (css, options) {
     "use strict";
     
     var Vue = require("./../../bower_components/vue/dist/vue.js");
-    var vuePopup = require("../../components/popup/popup.vue");
+    var vuePopup = require("../../components/popup.vue");
     var vueSample = require("../../components/sample.vue");
 
     var app = module.exports = new Vue({
@@ -8073,4 +8073,4 @@ module.exports = function (css, options) {
         }
     });
 })(window);
-},{"../../components/popup/popup.vue":2,"../../components/sample.vue":3,"./../../bower_components/vue/dist/vue.js":1}]},{},[5])
+},{"../../components/popup.vue":2,"../../components/sample.vue":3,"./../../bower_components/vue/dist/vue.js":1}]},{},[5])
