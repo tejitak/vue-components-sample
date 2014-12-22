@@ -13,7 +13,7 @@
     <div class="body">
         <img v-attr="src: logo">
         <div>{{description}}</div>
-        <a v-attr="href: url">{{url}}</a>
+        <a v-attr="href: url" target="_blank">{{url}}</a>
     </div>
 </div>
 </template>

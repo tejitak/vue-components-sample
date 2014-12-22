@@ -3,7 +3,7 @@
     position relative
     width 280px
     padding 20px
-    border: 1px solid #eee;
+    border 1px solid #eee
     background-color #fff
 
     .title

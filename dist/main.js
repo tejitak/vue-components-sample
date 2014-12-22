@@ -7979,7 +7979,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 },{}],2:[function(require,module,exports){
 require("insert-css")(".sample{overflow:auto;max-height:360px}.sample .body{padding:16px 0;text-align:center}");
-var __vue_template__ = "<div class=\"sample\">\n    <div class=\"body\">\n        <img v-attr=\"src: logo\">\n        <div>{{description}}</div>\n        <a v-attr=\"href: url\">{{url}}</a>\n    </div>\n</div>";
+var __vue_template__ = "<div class=\"sample\">\n    <div class=\"body\">\n        <img v-attr=\"src: logo\">\n        <div>{{description}}</div>\n        <a v-attr=\"href: url\" target=\"_blank\">{{url}}</a>\n    </div>\n</div>";
 module.exports = {
     data: function () {
         return {
